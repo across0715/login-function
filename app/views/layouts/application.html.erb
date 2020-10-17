@@ -11,9 +11,11 @@
 
   <body>
    <% if user_signed_in? %>
-   
+
     <%= link_to "トップ", items_path %>
     <%= link_to "投稿画面", new_item_path %>
+
+     <%= link_to 'マイページへ', users_path %>
 
       <!-- ログイン時 -->
       <%= link_to "アカウント編集", edit_user_registration_path %>
